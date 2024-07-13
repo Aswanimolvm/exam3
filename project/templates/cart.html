@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <ul>
+        {% for i in cart_items %}
+            <li>{{ i.name }} 
+                {{ i.details}}
+                 {{ i.price }}
+                <a href="{% url 'cart_delete' i.id %}">Remove</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
