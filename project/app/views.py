@@ -37,7 +37,7 @@ def login(request):
 def product(request):
     data=Product.objects.all()   
     context={
-        data:product
+        'data':data
     } 
     return render(request,'product.html',context)
 

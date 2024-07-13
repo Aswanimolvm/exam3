@@ -13,7 +13,7 @@
                 <li>{{ i.details}} </li>
                 <li>{{ i.price}} </li>
 
-                <a href="{% url 'add__tocart' id=i.id %}" class="btn btn-primary">Add to Cart</a>
+                <a href="{% url 'add_to_cart' id=i.id %}" class="btn btn-primary">Add to Cart</a>
 
             {% endfor %}
         </ul>
